@@ -2,7 +2,7 @@
 
 **_A simple and retro styled theme, concentrated more on your ideas._**
 
-Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice/hexo-theme-minos). Requires Hugo v0.20+.
+Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice/hexo-theme-minos). Requires Hugo v0.59+.
 
 ## Screenshots
 
@@ -51,6 +51,14 @@ paginate = 10
     smartToc = true
 ```
 
+### Post Navigation
+```
+[params]
+    noPostNavigation = true
+```
+
+This option disables links to next and previous post at the bottom of posts.
+
 ### Disqus
 ```
 disqusShortname = "xxxxxx"
@@ -58,8 +66,7 @@ disqusShortname = "xxxxxx"
 
 ### Google Analytics
 ```
-[params]
-    googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-123-45"
 ```
 
 ### KaTeX
@@ -69,6 +76,12 @@ disqusShortname = "xxxxxx"
 ```
 
 This option enables the KaTeX auto-render extension. To render block math, use `$$ ... $$`. For inline math, use `\\( ... \\)`. For more details, please refer to https://github.com/KaTeX/KaTeX/blob/v0.7.1/contrib/auto-render/auto-render.js#L73 .
+
+### Custom CSS
+```
+[params]
+    customCss = ["css/foo.css"]
+```
 
 ### Others
 
@@ -96,6 +109,14 @@ Enable KaTeX for a specific post without enabling the global switch.
 ```
 +++
 katex = true
++++
+```
+
+### Suppress date in an article
+Hide the date from an article, e.g. because it's just an index:
+```
++++
+omitDate = true
 +++
 ```
 
